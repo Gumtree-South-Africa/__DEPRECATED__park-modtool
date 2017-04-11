@@ -1,0 +1,88 @@
+<td class="first">{{ id }}</td>
+<td>{{ publishedBy }}</td>
+<td>
+  <div class="product-images-grid">
+    <div class="row">
+      {{#if picture1Url }}
+        <div class="product-thumbnail show js-showImagePreview">
+          <img src="{{ picture1Url }}"/>
+        </div>
+      {{else}}
+        <div class="product-thumbnail show">
+          <img src="img/img_placeholder.png"/>
+        </div>
+      {{/if}}
+      {{#if picture2Url }}
+        <div class="product-thumbnail show js-showImagePreview">
+          <img src="{{ picture2Url }}"/>
+        </div>
+      {{else}}
+        <div class="product-thumbnail show">
+          <img src="img/img_placeholder.png"/>
+        </div>
+      {{/if}}
+    </div>
+    <div class="row">
+      {{#if picture3Url }}
+        <div class="product-thumbnail show js-showImagePreview">
+          <img src="{{ picture3Url }}"/>
+        </div>
+      {{else}}
+        <div class="product-thumbnail show">
+          <img src="img/img_placeholder.png"/>
+        </div>
+      {{/if}}
+      {{#if picture4Url }}
+        <div class="product-thumbnail show js-showImagePreview">
+          <img src="{{ picture4Url }}"/>
+        </div>
+      {{else}}
+        <div class="product-thumbnail show">
+          <img src="img/img_placeholder.png"/>
+        </div>
+      {{/if}}
+    </div>
+  </div>
+</td>
+
+<td>{{ name }}</td>
+
+<td>
+  <p class="description">
+    {{ description }}
+  </p>
+</td>
+
+<td>{{ parseDate publishDate }}</td>
+<td>{{ parseDate lastModificationDate }}</td>
+<td>
+    <span class="label {{ toLowerCase status }}">{{ status }}</span>
+</td>
+
+<td>{{ countOfReports }}</td>
+<td class="actions">
+  <div class="btn-group">
+    <button class="js-removeItem tooltiped btn btn-default"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Remove">
+      <span class="glyphicon glyphicon-remove"></span>
+    </button>
+    {{#ifCond status "PENDING"}}
+      <button class="js-approveItem tooltiped btn btn-default"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Approve">
+        <span class="glyphicon glyphicon-ok"></span>
+      </button>
+    {{/ifCond}}
+    <a class="tooltiped btn btn-default"
+       title="See item page" href="{{url}}" target="_blank">
+      <span class="glyphicon glyphicon-move"></span>
+    </a>
+    <a class="tooltiped btn btn-default"
+       title="Send email" href="mailTo:{{email}}">
+      <span class="glyphicon glyphicon-envelope"></span>
+    </a>
+  </div>
+</td>

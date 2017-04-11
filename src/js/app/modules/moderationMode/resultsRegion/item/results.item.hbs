@@ -1,0 +1,131 @@
+<!-- <div  class="item-region white-background"> -->
+    <div id="itemHeader" class="item-header horizontal-flex flex-baseline space-between border-bottom">
+        <h5>User: <b>{{item.user.username}}</b></h5>
+        <h6>Last updated on {{parseDateWithHour item.lastModificationDate}}</h6>
+        <h5>Item ID: <b>{{item.id}}</b></h5>
+    </div>
+    <div id="itemBody" class="horizontal-flex">
+
+        <!-- Item pictures -->
+        <div class="box flex-child-50">
+            <div class="item-pictures">
+                <div class="big-picture mod-picture">
+                    <div class="big-pic-div">
+                        {{#if item.picture1 }}
+                            <img id="bigPic"  class="big-pic" src="{{ item.picture1 }}"/>
+                            <img id="deleteBigPic" class="bn-del-big-picture" src="../img/moderation_mode/bn_delete_picture.png" alt="" />
+                        {{/if}}
+                    </div>
+                </div>
+                <div id="smallPicsDiv" class="small-pictures horizontal-flex">
+                    <div class="small-pic-div mod-picture current-pic">
+                        {{#if item.picture1 }}
+                            <div class="pic-wrapper">
+                                <img id="pic1" class="small-pic" src="{{ item.picture1 }}"/>
+                            </div>
+                            <img class="bn-del-picture" src="../img/moderation_mode/bn_delete_picture.png" alt="" />
+                        {{/if}}
+                    </div>
+                    <div class="small-pic-div mod-picture">
+                        {{#if item.picture2 }}
+                            <div class="pic-wrapper">
+                                <img id="pic2" class="small-pic" src="{{ item.picture2 }}"/>
+                            </div>
+                          <img class="bn-del-picture" src="../img/moderation_mode/bn_delete_picture.png" alt="" />
+                        {{/if}}
+                    </div>
+                    <div class="small-pic-div mod-picture">
+                        {{#if item.picture3 }}
+                            <div class="pic-wrapper">
+                                <img id="pic3" class="small-pic" src="{{ item.picture3 }}"/>
+                            </div>
+                          <img class="bn-del-picture" src="../img/moderation_mode/bn_delete_picture.png" alt="" />
+                        {{/if}}
+                    </div>
+                    <div class="small-pic-div small-pic-div-last mod-picture">
+                        {{#if item.picture4 }}
+                            <div class="pic-wrapper">
+                                <img id="pic4" class="small-pic" src="{{ item.picture4 }}"/>
+                            </div>
+                          <img class="bn-del-picture" src="../img/moderation_mode/bn_delete_picture.png" alt="" />
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Item fields -->
+        <div id="item-info" class="vertical-flex flex-child-50 space-between">
+            <div class="">
+
+                <div class="horizontal-flex flex-center space-between">
+                    <select id="categorySelect" class="item-category" name="category" disabled="disabled">
+                        {{#each categories}}
+                            {{#if selectable}}
+                                <option {{#ifCond id ../../item.category.id}} selected="selected" {{/ifCond}} value="{{id}}">{{name}}</option>
+                            {{/if}}
+                        {{/each}}
+                    </select>
+                    <img id="lock" src="../img/moderation_mode/padlock_closed.png" alt="" />
+                </div>
+
+                <input type="text" id="title" class="item-title" maxlength="20" disabled="disabled" value="{{item.name}}">
+
+                <textarea id="description" class="item-description" maxlength="160" disabled="disabled">{{item.description}}</textarea>
+
+            </div>
+
+            <div class="">
+
+                <div class="horizontal-flex flex-start border-bottom padding-top-10">
+                    <div class="img-icon groups-icon">
+                        <img src="../img/moderation_mode/icon_group.png" alt="" />
+                    </div>
+                    <div class="groups-labels">
+                        {{showGoupsLabels item.groups}}
+                    </div>
+                </div>
+
+                <div class="horizontal-flex flex-center space-between border-bottom padding-top-10">
+                    <div class="horizontal-flex flex-center">
+                        <div class="img-icon">
+                            <img src="../img/moderation_mode/icon_price.png" alt="" />
+                        </div>
+                        <div class="item-data"><b>${{roundPrice item.price}}</b></div>
+                    </div>
+                    <div class="horizontal-flex flex-center">
+                        <div class="img-icon">
+                            <img src="../img/moderation_mode/icon_like_big.png" alt="" />
+                        </div>
+                        <div class="item-data">{{item.totalOfFollowers}}</div>
+                    </div>
+                </div>
+
+                <div class="horizontal-flex flex-center padding-top-10">
+                    <div class="img-icon">
+                        <img src="../img/moderation_mode/icon_location.png" alt="" />
+                    </div>
+                    <div class="item-data">{{item.locationName}} ({{item.zipCode}})</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="itemFooter" class="item-footer">
+
+        <div class="no-yes-buttons horizontal-flex">
+            <button id="noButton" type="button" class="item-mod-button no-button">NO</button>
+            <button id="yesButton" type="button" class="item-mod-button yes-button">YES</button>
+            <button id="saveAndNextButton" type="button" class="item-mod-button save-next-button">SAVE AND GET NEXT</button>
+        </div>
+        <div class="flag-link horizontal-flex space-between">
+            <div class="">
+                <img id="flagApproved" class="flags" src="../img/moderation_mode/flag_approved.png" alt="" />
+                <img id="flagRejected" class="flags" src="../img/moderation_mode/flag_rejected.png" alt="" />
+            </div>
+            <div id="rejectionLabel"></div>
+            <a id="skipLink" class="skip-link">Skip</a>
+            <a id="backLink" class="back-link">Back</a>
+        </div>
+
+    </div>

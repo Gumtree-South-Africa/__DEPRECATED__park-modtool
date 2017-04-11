@@ -1,0 +1,59 @@
+<td class="first">{{ userId }}</td>
+<td>{{ username }}</td>
+<td>
+  <div class="user-pic small">
+    <label class="edit-pic">
+      {{#if picture }}
+        <img src="{{ picture }}"/>
+      {{/if}}
+      {{#unless picture}}
+        <img src="img/picPlaceholder.png"/>
+      {{/unless}}
+    </label>
+  </div>
+</td>
+<td>{{ email }}</td>
+
+<td>{{ parseDate registrationDate }}</td>
+<td>
+    <span class="label {{ toLowerCase status }}">{{ status }}</span>
+</td>
+<td>
+    <span class="label {{#if userVerified }} active {{/if}}{{#unless userVerified}} banned {{/unless}}">{{#if userVerified }} YES {{/if}}{{#unless userVerified}} NO {{/unless}}</span>
+</td>
+<td class="actions">
+  <div class="btn-group">
+    {{#ifCond status "ACTIVE"}}
+      <button class="js-banUser tooltiped btn btn-default"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Ban">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
+    {{/ifCond}}
+    {{#ifCond status "BANNED"}}
+      <button class="js-activateUser tooltiped btn btn-default"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Activate">
+        <span class="glyphicon glyphicon-ok"></span>
+      </button>
+    {{/ifCond}}
+    {{#ifCond status "LOCKED"}}
+      <button class="js-resetPassword tooltiped btn btn-default"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Unlock">
+        <span class="glyphicon glyphicon-ok"></span>
+      </button>
+    {{/ifCond}}
+    <button class="js-seeProfile tooltiped btn btn-default"
+            title="See user profile">
+      <span class="glyphicon glyphicon-move"></span>
+    </button>
+    <a class="tooltiped btn btn-default"
+       title="Send email" href="mailTo:{{email}}">
+      <span class="glyphicon glyphicon-envelope"></span>
+    </a>
+  </div>
+</td>

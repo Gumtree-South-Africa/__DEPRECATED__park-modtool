@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title>Vivanuncios Moderation Tool</title>
+    <meta name="description" content="The Moderation Tool for the Vivanuncios Application">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="vendor/jqDateTimePicker/jquery.datetimepicker.css"/ >
+    <!--link rel="stylesheet" type="text/css" href="vendor/jquery-ui/jquery-ui.css"/ -->
+    <link rel="stylesheet" type="text/css" href="css/moderation-tool.min-0.0.1.css">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="full-height" id="page">
+      <div class="sidebar-default main-sidebar">
+        <div class="current-user" style="display:none;">
+          <a href="#" class="name">
+            <div>
+              <span class="glyphicon glyphicon-cog"></span>
+              <span class="title">Moderation Tool</span>
+            </div>
+          </a>
+        </div>
+        <div class="menu-section" style="display:none;">
+          <ul>
+            <li class="option">
+              <a href="#products" id="products-btn">
+                <span class="glyphicon glyphicon-lock"></span>
+                <span>Products</span>
+              </a>
+            </li>
+            <li class="option">
+              <a href="#users" id="users-btn">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>Users</span>
+              </a>
+            </li>
+            <li class="option">
+              <a href="#groups" id="groups-btn">
+                <span class="glyphicon glyphicon-th-large"></span>
+                <span>Groups</span>
+              </a>
+            </li>
+            <li class="option">
+              <a href="#blacklist" id="blacklist-btn">
+                <span class="glyphicon glyphicon-user"></span>
+                <span>Blacklist Words</span>
+              </a>
+            </li>
+            <li class="option">
+              <a href="#notification" id="notification-btn">
+                <span class="glyphicon glyphicon-envelope"></span>
+                <span>Send notifications</span>
+              </a>
+            </li>
+            <li class="option">
+              <a href="#moderation" id="moderation-mode-btn">
+                <img src="../img/moderation_mode/menu_icon_moderation_mode.png" />
+                <span>Moderation mode</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content full-height">
+      	<div class="full-height loading-wrapper" id="loading">
+	      <div class="title">
+	        <img class="logo" src="img/logo.png" width="100">
+	        <h3>Moderation Tool</h3>
+	      </div>
+	      <div class="shaft-load">
+	        <div class="shaft1"></div>
+	        <div class="shaft2"></div>
+	        <div class="shaft3"></div>
+	        <div class="shaft4"></div>
+	        <div class="shaft5"></div>
+	        <div class="shaft6"></div>
+	        <div class="shaft7"></div>
+	        <div class="shaft8"></div>
+	        <div class="shaft9"></div>
+	        <div class="shaft10"></div>
+	      </div>
+	    </div>
+        <div class="menubar" id="headerRegion">
+
+        </div>
+        <div class="content-wrapper clearfix" id="contentRegion">
+          <!-- CONTENT REGION -->
+        </div>
+      </div>
+      <section class="modal fade" role="modal" id="modalRegion"></section>
+    </div>
+    <script type="text/javascript" data-main="js/main" src="vendor/requirejs/require.js"></script>
+  </body>
+</html>

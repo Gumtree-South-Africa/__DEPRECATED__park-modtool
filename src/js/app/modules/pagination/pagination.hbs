@@ -1,0 +1,15 @@
+<div class="pull-left counter">
+  Showing
+  <span class="label label-warning">{{viewElements}}</span> of
+  <span class="label label-warning">{{ totalRecords }}</span>
+  items found
+</div>
+<div class="btn-group">
+  <button type="button" class="js-showFirstPage btn btn-default">First</button>
+  <button type="button" class="js-previewPage btn btn-default">Preview</button>
+  {{#each arrPages }}
+    <button type="button" class="js-changePage btn btn-default {{#ifCond ../selectPage this }}active{{/ifCond}}" data-page="{{ this }}">{{ this }}</button>
+  {{/each}}
+  <button type="button" class="js-nextPage btn btn-default">Next</button>
+  <button type="button" class="js-showLastPage btn btn-default">Last</button>
+</div>

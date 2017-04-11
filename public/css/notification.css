@@ -1,0 +1,313 @@
+.notification {
+	padding: 10px 20px
+}
+
+.notification h4 {
+	border-bottom: 1px solid silver;
+	margin-bottom:20px;
+	padding:0 0 4px;
+}
+
+.notification textarea {
+	resize: none;
+}
+
+.notification textarea:-ms-input-placeholder {
+	font-style: italic;
+}
+
+.notification textarea:-moz-placeholder {
+	font-style: italic;
+}
+
+.notification textarea::-moz-placeholder {
+	font-style: italic;
+}
+
+.notification textarea::-webkit-input-placeholder {
+	font-style: italic;
+}
+
+.notification .form-group .chars-left {
+    float: right;
+    color: #9b9b9b;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.notification .form-group .checkbox {
+    font-size: 12px;
+    padding-top: 25px;
+}
+
+.notification .filter {
+	padding-top:25px;
+}
+
+.notification .filter img {
+	padding-right: 5px;
+}
+
+.notification .push-status {
+	bottom: 0;
+	position: fixed;
+	width: 25%;
+	margin:0;
+	padding:0;
+  z-index: 100;
+}
+
+.notification .push-status .title-push {
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
+.notification .push-status .loading {
+    padding-left: 0.5em;
+    font-size: 15px;
+}
+
+.notification .push-status .message-text img {
+    padding-right: 0.5em;
+}
+
+.notification .push-status .message-text .number-users {
+	font-size: 24px;
+	padding-right: 5px;
+}
+
+.notification .push-status .message-text {
+	border-bottom: 1px solid #e2e2e2;
+	padding: 10px;
+}
+
+.notification .push-status .message-text:last-of-type {
+	border-bottom: 0;
+	padding-bottom: 20px;
+}
+
+.notification .center-align {
+    display: flex;
+    align-items: center;
+    /*padding: 10px;*/
+}
+
+
+/*.notification .push-status .fields-to-complete {
+    display: inline-block;
+}*/
+
+.notification .push-status .fields-to-complete:first-letter {
+	text-transform: uppercase;
+}
+
+.notification .push-status .message-text .schedule-text {
+	font-size: 26px;
+}
+
+/*.notification .push-status .send-data .sending {
+	display: none;
+}*/
+
+.notification .push-status .button-center {
+    text-align: center;
+    padding: 15px;
+}
+
+.notification .push-status .btn {
+    background: #f33;
+    color: #fff;
+    border: 0;
+    -webkit-box-shadow: 1px 1px 4px rgba(168,168,168,1);
+    -moz-box-shadow: 1px 1px 4px rgba(168,168,168,1);
+    box-shadow: 1px 1px 4px rgba(168,168,168,1);
+}
+
+.notification .push-status .btn:disabled {
+    background: #d9d9d9;
+    color: #fff;
+    border: 0;
+    -webkit-box-shadow: 1px 1px 4px rgba(168,168,168,0);
+    -moz-box-shadow: 1px 1px 4px rgba(168,168,168,0);
+    box-shadow: 1px 1px 4px rgba(168,168,168,0);
+}
+
+/* style to apply when the button says "Confirm & Save" */
+.notification .push-status .save {
+    background: #146ED3;
+}
+
+
+.notification .push-status .success-sent {
+	display: none;
+	text-align: left;
+}
+
+.notification .push-status .success-sent p {
+	font-size: 11px;
+}
+
+.notification .push-status .success-sent .done {
+	font-size: 30px;
+}
+
+.notification .push-status .success-sent .done img {
+	padding-right: 10px;
+}
+
+.notification .center-region .add-condition {
+    color: #146ED3;
+}
+
+.notification .center-region .filter-user {
+	display: none;
+	margin-top: 30px;
+}
+
+.notification .center-region .filter-user p {
+	margin-bottom: 15px;
+}
+
+.notification .center-region .filter-user .add-condition {
+	float: left;
+	height: auto;
+    color: #146ED3;
+}
+
+.notification .center-region .list-condicion {
+	list-style: outside none none;
+	padding-left: 0;
+}
+
+.notification .center-region .list-condicion li {
+    float: left;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.notification .center-region .list-condicion select{
+	vertical-align: middle;
+}
+
+.notification .center-region .icon-remove-filter {
+	background: url('../img/icon_remove_filter_default.png') no-repeat;
+	display: inline-block;
+	float: left;
+	height: 28px;
+	vertical-align: middle;
+	width: 28px;
+}
+
+.notification .center-region .icon-remove-filter:hover {
+	background: url('../img/icon_remove_filter_over.png') no-repeat;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+}
+
+.notification .center-region .list-condicion .option-filter {
+	float: left;
+	height: 28px;
+	margin: 0 5px 5px 0;
+	padding: 0;
+	width: 210px;
+}
+
+.notification .center-region .list-condicion .option-element {
+	float: left;
+}
+
+.notification .center-region .list-condicion .option-elements {
+	float: left;
+	padding: 5px;
+}
+
+.notification .center-region .list-condicion .option-element select {
+	height: 28px;
+	padding: 0;
+}
+
+.notification .center-region .list-condicion .option-element .states {
+	width: 178px;
+}
+
+.notification .center-region .list-condicion .date-account {
+	display: inline-block;
+	height: 28px;
+	text-align: center;
+    width: 100px;
+}
+
+.notification .center-region .list-condicion .category {
+	display: inline-block;
+	height: 28px;
+    margin-top: 5px;
+}
+
+.notification .center-region .list-condicion .date-account-text {
+	margin: 5px 10px;
+}
+
+.notification .center-region .list-condicion .option-target {
+	float: left;
+	margin-left: 5px;
+	width: 88%;
+}
+
+.notification .center-region .session-form {
+    display: flex;
+    padding: 10px 0 0 10px;
+}
+
+.notification .center-region .session-form p {
+    padding-right: 5px;
+}
+
+.notification input[type="radio"],
+.notification input[type="checkbox"] {
+    display: none;
+}
+
+.notification input[type=radio] + label {
+	background: url('../img/radio_empty.png') no-repeat;
+}
+
+.notification input[type="radio"]:checked + label {
+    background: url('../img/radio_selected.png') no-repeat;
+}
+
+.notification input[type=checkbox] + label {
+	background: url('../img/checkbox_unchecked.png') no-repeat;
+}
+
+.notification input[type="checkbox"]:checked + label {
+    background: url('../img/checkbox_checked.png') no-repeat;
+}
+
+.radio label {
+	padding-left: 30px;
+}
+
+.checkbox label {
+	padding-left: 25px;
+}
+
+.notification .error {
+	background-color:  #ff9900;
+	padding: 5px;
+    position: absolute;
+    border-radius: 15px;
+    height: 30px;
+}
+
+.notification .error p:before {
+  	content: url('../img/icon_validation_msg.png');
+  	padding-right: 5px;
+  	vertical-align: top;
+}
+
+.notification .error p {
+    vertical-align: top;
+    color: white;
+    padding-right: 5px;
+}

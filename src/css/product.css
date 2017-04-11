@@ -1,0 +1,133 @@
+.products-list {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.products-list thead {
+  background-color: #000;
+  background-image: linear-gradient(rgb(247, 248, 252), rgb(248, 249, 252));
+  background-origin: padding-box;
+  background-size: auto;
+  border-bottom-color: rgb(222, 227, 234);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-collapse: collapse;
+  border-top-color: rgb(212, 219, 228);
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(51, 51, 51);
+  display: table-header-group;
+  font-family: 'Source Sans Pro', 'Helvetica Neue', Arial;
+  font-size: 14px;
+  height: 45px;
+  line-height: 20px;
+  vertical-align: middle;
+  box-shadow: rgba(255, 255, 255, 0.792157) 0 1px 0 0 inset;
+}
+
+.products-list .first,
+.products-list.blacklist .first {
+  padding-left: 30px;
+}
+
+.products-list thead tr th {
+  padding: 10px;
+}
+
+.products-list tbody tr {
+  border-bottom: 1px solid silver;
+}
+
+.products-list tbody tr td {
+  padding: 5px 10px;
+  vertical-align: middle;
+}
+
+.products-list tbody .description {
+  max-width: 200px;
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.products-list tbody .actions {
+  min-width: 100px;
+}
+
+.products-list.blacklist tbody tr td {
+  padding: 10px 10px;
+}
+
+
+.product-images-grid {
+  width: 80px;
+  height: 80px;
+}
+
+.product-images-grid .row {
+  width: 100%;
+  height: 39px;
+}
+
+.product-thumbnail {
+  width: 36px;
+  height: 36px;
+  margin: 2px;
+
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.group-thumbnail {
+  width: 120px;
+  height: 48px;
+
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.product-thumbnail.large {
+  width: 598px;
+  height: 500px;
+
+  margin: 0;
+
+  float: none;
+}
+
+.product-thumbnail img,
+.group-thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.product-thumbnail img {
+  height: 100%;
+  width: auto;
+
+   cursor: pointer;
+}
+
+.group-thumbnail img {
+  height: auto;
+  width: 100%;
+}
+
+
+
+.product-thumbnail.show img:hover {
+  opacity: 0.8;
+}
+
+.product-thumbnail .portrait {
+  width: 100%;
+  height: auto;
+}

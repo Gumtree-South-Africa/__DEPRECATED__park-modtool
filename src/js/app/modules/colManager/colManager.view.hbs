@@ -1,0 +1,40 @@
+<div id="managerMenu" class="col-manager-menu">
+     <div class="manager-header">
+         <h4>
+             Customize the Grid
+         </h4>
+         <p class="sub-title">
+             Select columns to be display and the order in which they should appear
+         </p>
+     </div>
+     <div class="manager">
+         <div  class="column-list">
+             <p class="col-list-title">
+                 Visible columns and order
+             </p>
+             <div id="visibleColumns"  class="container columns-container" multiple="multiple">
+             </div>
+         </div>
+         <div class="buttons">
+             <div class="btns-group">
+                 <button id="btnShow" type="button" class="btns btn-show-hide-size" disabled="disabled"></button>
+                 <button id="btnHide" type="button" class="btns btn-show-hide-size" disabled="disabled"></button>
+             </div>
+             <div class="btns-group">
+                 <button id="btnUp" type="button" class="btns btn-up-down-size" disabled="disabled"></button>
+                 <button id="btnDown" type="button" class="btns btn-up-down-size" disabled="disabled"></button>
+             </div>
+         </div>
+         <div  class="column-list">
+             <p class="col-list-title">
+                 Hidden columns
+             </p>
+             <div id="hiddenColumns"  class="container columns-container" multiple="multiple">
+             </div>
+         </div>
+     </div>
+     <div class="manager-footer">
+         <button id="btnCancel" type="button" class="btn btn-cancel">Cancel</button>
+         <button id="btnUpdateGrid" type="button" class="btn btn-update" disabled="disabled">Update Grid</button>
+     </div>
+</div>

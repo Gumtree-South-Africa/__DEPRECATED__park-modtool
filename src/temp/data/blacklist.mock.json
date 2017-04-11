@@ -1,0 +1,82 @@
+{
+  "statusMessage": "",
+  "statusCode": 1,
+  "data": {
+    "items": [
+      {
+          "id": 1,
+          "word": "Dad"
+      },
+      {
+          "id": 2,
+          "word": "Some"
+      },
+      {
+          "id": 3,
+          "word": "Word"
+      },
+      {
+          "id": 4,
+          "word": "Special"
+      },
+      {
+          "id": 5,
+          "word": "Another"
+      },
+      {
+          "id": 6,
+          "word": "Son"
+      },
+      {
+          "id": 7,
+          "word": "Sun"
+      },
+      {
+          "id": 8,
+          "word": "Magic"
+      },
+      {
+          "id": 9,
+          "word": "Enemy"
+      },
+      {
+          "id": 10,
+          "word": "Dog"
+      },
+      {
+          "id": 11,
+          "word": "Cat"
+      },
+      {
+          "id": 12,
+          "word": "Semantic"
+      },
+      {
+          "id": 13,
+          "word": "Weird"
+      },
+      {
+          "id": 14,
+          "word": "Republic"
+      },
+      {
+          "id": 16,
+          "word": "Island"
+      },
+      {
+          "id": 17,
+          "word": "Sea"
+      },
+      {
+          "id": 18,
+          "word": "Surf"
+      },
+      {
+          "id": 19,
+          "word": "Song"
+      }
+
+    ],
+    "amountItemsFound": 18
+  }
+}

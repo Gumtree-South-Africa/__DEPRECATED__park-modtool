@@ -1,0 +1,53 @@
+<div class="user-items-element vertical-flex space-between
+    {{#unless pendingModeration}}
+        moderated-border
+    {{/unless}}">
+    <div class="">
+        <div class="list-images">
+            <div id="zoom-out-btn">
+                <img src="../img/moderation_mode/back_btn.png" alt="" />
+            </div>
+            <div class="list-image mod-picture">
+                {{#if pictureUrl1}}
+                    <img class="list-img" src="{{pictureUrl1}}" alt="" />
+                {{/if}}
+            </div>
+            <div class="list-image mod-picture">
+                {{#if pictureUrl2}}
+                    <img class="list-img" src="{{pictureUrl2}}" alt="" />
+                {{/if}}
+            </div>
+            <div class="list-image mod-picture">
+                {{#if pictureUrl3}}
+                    <img class="list-img" src="{{pictureUrl3}}" alt="" />
+                {{/if}}
+            </div>
+            <div class="list-image mod-picture">
+                {{#if pictureUrl4}}
+                    <img class="list-img" src="{{pictureUrl4}}" alt="" />
+                {{/if}}
+            </div>
+        </div>
+        <div class="price-likes-list-item horizontal-flex flex-center space-between border-bottom">
+            <div class="item-list-data"><b>${{price}}</b></div>
+            <div class="horizontal-flex flex-center">
+                <div class="img-small-icon">
+                    <img src="../img/moderation_mode/icon_like_small.png" alt="" />
+                </div>
+                <div class="item-list-data">{{totalOfFollowers}}</div>
+            </div>
+        </div>
+        <div class="item-list-title">
+            <b>{{name}}</b>
+        </div>
+    </div>
+    <div class="list-buttons horizontal-flex space-between">
+        {{#if pendingModeration}}
+            <a id="moderateItem"><img src="../img/moderation_mode/bn_moderation_pending.png" alt="" /></a>
+        {{else}}
+            <img src="../img/moderation_mode/bn_moderation_approved.png" alt="" />
+        {{/if}}
+        <a href="{{url}}" target="_blank"><img src="../img/moderation_mode/bn_link_default.png" alt="" /></a>
+        <a id="deleteItem"><img src="../img/moderation_mode/bn_trash_default.png" alt="" /></a>
+    </div>
+</div>

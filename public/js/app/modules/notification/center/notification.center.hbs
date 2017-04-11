@@ -1,0 +1,33 @@
+<h4><strong>Target audience</strong></h4>
+<div class="form-inline">
+  <div class="form-group">
+    <p class="form-control-static" for="platform">Send notification to </p>
+  </div>
+  <div class="form-group">
+    <select class="form-control" id="platform">
+      <option value="default" selected disabled><i>Select...</i></option>
+      <option value="other">All users</option>
+      <option value="android">Android users</option>
+      <option value="ios">iOS users</option>
+    </select>
+  </div>
+  <div class="session-form">
+    <p class="form-control-static" for="sessionStatus">Session status </p>
+    <select class="form-control" id="sessionStatus" disabled="disabled">
+      <option value="default" selected disabled><i>Select...</i></option>
+      <option value="active_session">Logged in</option>
+      <option value="inactive_session">Logged out</option>
+      <option value="with_session">Logged in & logged out</option>
+      <option value="no_session">Device id only</option>
+    </select>
+  </div>
+</div>
+<div id="filter" class="filter">
+  <p id="addFilterText"><img id="filterImg" src="../img/icon_add_filter_disabled.png" /> Add filter</p>
+</div>
+<div id="filterUser" class="filter-user">
+  <p>Filter users by:</p>
+  <ul id="listCondition" class="list-condicion">
+  </ul>
+  <p id="addCondition" class="add-condition"><img src="../img/icon_add_filter_default.png" /> Add condition</p>
+</div>

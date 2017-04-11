@@ -1,0 +1,68 @@
+.user-pic img {
+  background: #C1C1C1;
+  position: absolute;
+  left: 50%;
+}
+
+.edit-pic {
+  position: relative;
+  border-radius: 50% 50%;
+  overflow: hidden;
+}
+
+.edit-pic .icon.edit {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.user-pic.tiny .edit-pic {
+  width: 33px;
+  height: 33px;
+}
+
+.user-pic.small .edit-pic {
+  width: 47px;
+  height: 47px;
+}
+
+.user-pic.medium .edit-pic {
+  width: 57px;
+  height: 57px;
+}
+
+.user-pic.large .edit-pic {
+  width: 77px;
+  height: 77px;
+}
+
+.user-pic.xlarge .edit-pic {
+  width: 137px;
+  height: 137px;
+}
+
+.user-pic.large img {
+  width: 120px;
+  margin-left: -60px;
+}
+
+.user-pic.xlarge img {
+  width: 200px;
+  margin-left: -100px;
+}
+
+.user-pic.tiny img {
+  width: 60px;
+  margin-left: -30px;
+}
+
+.user-pic.small img {
+  width: 76px;
+  margin-left: -38px;
+}
+
+.user-pic.medium img {
+  width: 80px;
+  margin-left: -40px;
+  position: relative;
+}

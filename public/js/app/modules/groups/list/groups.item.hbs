@@ -1,0 +1,27 @@
+<td class="first">{{ id }}</td>
+<td>
+  {{#if pictureUrl }}
+    <div class="group-thumbnail">
+      <img src="{{ pictureUrl }}"/>
+    </div>
+  {{else}}
+    <div class="group-thumbnail">
+      <img src="img/groups_placeholder.png"/>
+    </div>
+  {{/if}}
+</td>
+<td>{{ name }}</td>
+<td>{{ creatorName }}</td>
+<td>
+    <span class="label {{#if ownerVerified }} active {{/if}}{{#unless ownerVerified}} banned {{/unless}}">{{#if ownerVerified }} YES {{/if}}{{#unless ownerVerified}} NO {{/unless}}</span>
+</td>
+<td class="actions">
+  <div class="btn-group">
+    <button class="js-removeItem tooltiped btn btn-default"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Remove">
+      <span class="glyphicon glyphicon-remove"></span>
+    </button>
+  </div>
+</td>

@@ -1,0 +1,23 @@
+{
+  "name": "datatables-colreorder",
+  "version": "1.2.0",
+  "main": [
+    "js/dataTables.colReorder.js",
+    "css/colReorder.dataTables.scss"
+  ],
+  "dependencies": {
+    "jquery": ">=1.7.0",
+    "datatables": ">=1.10.8"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/DataTables/ColReorder",
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.0",
+    "commit": "39c42cd0814dc09ff2a13c57281a3ea6be5c1e5e"
+  },
+  "_source": "https://github.com/DataTables/ColReorder.git",
+  "_target": "~1.2.0",
+  "_originalSource": "datatables-colreorder"
+}

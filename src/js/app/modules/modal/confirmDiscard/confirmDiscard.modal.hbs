@@ -1,0 +1,19 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h4 class="modal-title">{{ title }}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{ question }}</p>
+    <div>
+      <p>{{ note }}</p>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="js-cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    {{#if discardButton}}
+        <button type="button" class="js-discard btn btn-default" id="firstBtn" data-dismiss="modal">{{discardButton}}</button>
+    {{/if}}
+    <button type="button" class="js-confirm btn btn-primary" id="secondBtn" data-dismiss="modal">{{confirmButton}}</button>
+  </div>
+</div><!-- /.modal-content -->

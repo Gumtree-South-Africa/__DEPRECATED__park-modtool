@@ -1,0 +1,82 @@
+<div class="filteredData">
+  <div class="page-header">
+    <h3 class="title">Filtered <small>by:</small></h3>
+    <span class="tag-list"></div>
+  </div>
+</div>
+
+<div class="page-header">
+  <h3 class="title">Filter <small>by:</small></h3>
+</div>
+
+<div class="panel panel-default clear-fix">
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text"
+               class="form-control"
+               id="titleFilter"
+               name="{{ displayName.filter1 }}"
+               placeholder="Enter the {{ displayName.filter1 }}">
+        <button class="js-addFilterValue input-group-addon">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="input-group">
+        <input type="text"
+               class="form-control"
+               id="filterOwner"
+               name="{{ displayName.filter2 }}"
+               placeholder="Enter the {{ displayName.filter2 }}">
+        <button class="js-addFilterValue input-group-addon">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+      </div>
+    </div>
+    {{#if statusArr}}
+      <div class="form-group">
+        <select class="form-control js-changeStatus" name="{{ displayName.filter3 }}">
+          {{#each statusArr }}
+            <option value="{{ this }}"> {{ this }} </option>
+          {{/each }}
+        </select>
+      </div>
+    {{/if}}
+    {{#if verifiedArr}}
+      <div class="form-group">
+        <select class="form-control js-changeStatus" name="{{ displayName.filter4 }}">
+          {{#each verifiedArr }}
+            <option value="{{ this }}"> {{ this }} </option>
+          {{/each }}
+        </select>
+      </div>
+     {{/if}}
+     {{#if verifiedGroup}}
+      <div class="form-group">
+        <select class="form-control js-changeStatus" name="{{ displayName.filter3 }}">
+          {{#each verifiedGroup }}
+            <option value="{{ this }}"> {{ this }} </option>
+          {{/each }}
+        </select>
+      </div>
+     {{/if}}
+  </form>
+
+  <div class="tag-list">
+     <!-- Tags are dynamically added -->
+  </div>
+
+  <div>
+    <form class="form-inline pull-right">
+      <div class="form-group">
+        <button class="js-applyFilter btn btn-main">Apply</button>
+      </div>
+      <div class="form-group">
+        <a href="javascript:void(0)" class="js-cleanFilter" >Clean</a>
+      </div>
+    </form>
+  </div>
+</div>
+

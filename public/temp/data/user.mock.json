@@ -1,0 +1,105 @@
+{
+  "statusMessage": "",
+  "statusCode": 1,
+  "data": {
+    "items": [
+      {
+          "id": 1,
+          "username": "username1",
+          "email": "username1@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "ACTIVE",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 2,
+          "username": "username2",
+          "email": "username2@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "ACTIVE",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 3,
+          "username": "username3",
+          "email": "username3@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 4,
+          "username": "username4",
+          "email": "username4@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 5,
+          "username": "username5",
+          "email": "username5@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "ACTIVE",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 6,
+          "username": "username6",
+          "email": "username6@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 7,
+          "username": "username7",
+          "email": "username7@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "ACTIVE",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 8,
+          "username": "username8",
+          "email": "username8@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 9,
+          "username": "username9",
+          "email": "username9@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 10,
+          "username": "username10",
+          "email": "username10@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 11,
+          "username": "username11",
+          "email": "username11@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      },
+      {
+          "id": 12,
+          "username": "username12",
+          "email": "username12@mail.com",
+          "pictureUrl": "https://addons.cdn.mozilla.net/media//img/zamboni/anon_user.png",
+          "status": "BANNED",
+          "registrationDate": "2014-06-24T00:00:00-03:00"
+      }
+    ],
+    "amountItemsFound": 12
+  }
+}

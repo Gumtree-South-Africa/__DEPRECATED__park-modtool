@@ -1,0 +1,57 @@
+{
+    "statusMessage": "",
+    "statusCode": 1,
+    "data": {
+        "groups": [
+            {
+                "id": 4,
+                "name": "Group 4",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 6,
+                "name": "Group 6",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 7,
+                "name": "Group 7",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 8,
+                "name": "Group 8",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 9,
+                "name": "Group 9",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 10,
+                "name": "Group 10",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 11,
+                "name": "Group 11",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            },
+            {
+                "id": 12,
+                "name": "Group 12",
+                "creator": "John123",
+                "pictureUrl": "http://uxrepo.com/static/icon-sets/windows/svg/group.svg"
+            }
+        ],
+        "totalGroupsFound": 8
+    }
+}

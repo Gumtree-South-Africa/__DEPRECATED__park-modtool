@@ -1,0 +1,149 @@
+{
+  "statusMessage": "",
+  "statusCode": 1,
+  "data": {
+    "items": [
+      {
+          "id": 1,
+          "name": "Xbox One",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/6-abbb31dcbc75ee5de7490b0b56feb863.png",
+          "status": "ACTIVE",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "User1234"
+      },
+      {
+          "id": 2,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/8-90f5b28b4218253110a349b4114eba16.png",
+          "status": "ACTIVE",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 3,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/3-252036ed0497bcfef51e8b4a4d2e73da.jpg",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 4,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://i.ebayimg.com/00/s/MzYwWDM2MQ==/z/d08AAOSw-dBTtvdG/$_12.JPG",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 5,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://i.ebayimg.com/00/s/MTYwMFgxMjA3/z/YyYAAMXQpPhTkLtZ/$_57.JPG",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 6,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/8-90f5b28b4218253110a349b4114eba16.png",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 7,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/8-90f5b28b4218253110a349b4114eba16.png",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 8,
+          "name": "Xbox One",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/6-abbb31dcbc75ee5de7490b0b56feb863.png",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "User1234"
+      },
+      {
+          "id": 9,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/8-90f5b28b4218253110a349b4114eba16.png",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 10,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/3-252036ed0497bcfef51e8b4a4d2e73da.jpg",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 11,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://i.ebayimg.com/00/s/MzYwWDM2MQ==/z/d08AAOSw-dBTtvdG/$_12.JPG",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 12,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://i.ebayimg.com/00/s/MTYwMFgxMjA3/z/YyYAAMXQpPhTkLtZ/$_57.JPG",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 13,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/8-90f5b28b4218253110a349b4114eba16.png",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      },
+      {
+          "id": 14,
+          "name": "Nintendo 3DS",
+          "description": "Some description for this product. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.",
+          "pictureUrl": "http://wolfadmin.herokuapp.com/assets/products/8-90f5b28b4218253110a349b4114eba16.png",
+          "status": "PENDING",
+          "publishDate": "2014-06-24T00:00:00-03:00",
+          "countOfReports": 100,
+          "publishedBy": "newUser3456"
+      }
+    ],
+    "amountItemsFound": 14
+  }
+}

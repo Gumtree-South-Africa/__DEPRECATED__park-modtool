@@ -1,0 +1,62 @@
+<h4><strong>Schedule</strong></h4>
+<div id="optionSchedule">
+	<div class="radio">
+		<input type="radio" id="radioNow" name="optionsRadios" value="option1" />
+		<label for="radioNow">Send notification immediately</label>
+	</div>
+	<div class="radio" style="display:none">
+		<input type="radio" name="optionsRadios" value="option2" />
+		<label for="">Set specific day and time...</label>
+	</div>
+</div>
+<div class="push-status">
+	<section id="receiversSection" class="message-text">
+	    <p id="titleReceivers" class="title-push">Send push notification to</p>
+	    <p id="loading" class="title-push loading">
+            <img src="../img/ajax-loader.gif" />
+            loading...
+        </p>
+	    <p id="infoUsersSend">
+            <span id="numberUsers" class="number-users"></span>
+            <span id="toUsers"></span>
+        </p>
+	</section>
+	<section id="whenSection" class="message-text">
+        <p class="title-push">When</p>
+        <p id="scheduleText" class="schedule-text">Schedule</p>
+	</section>
+    <section id="infoSection" class="message-text">
+        <p id="fieldsToComplete" class="fields-to-complete title-push"></p>
+    </section>
+    <section id="errorSection" class="center-align message-text">
+        <img src="../img/icon_exclamation_point.png" />
+        <span id="errorMessage" class="title-push"></span>
+    </section>
+	<section id="sendButtonsSection" class="message-text">
+		<p id="sending" class="title-push loading">
+            <img src="../img/ajax-loader.gif" />
+            sending...
+        </p>
+        <!-- TODO  toggle con la clase 'save' para cambiar el estilo del boton al de save-->
+        <div class="button-center">
+            <button
+                type="submit"
+                id="sendDataButton"
+                class="btn btn-default btn-lg"
+                disabled="disabled">
+                Confirm & Send
+            </button>
+        </div>
+	</section>
+	<section id="successSection" class="message-text success-sent">
+		<p class="done">
+            <img src="../img/icon_green_check.png" />
+            Done!
+        </p>
+		<p id="message1">Mensaje de exito 1</p>
+		<p id="message2">Mensaje de exito 2</p>
+	</section>
+    <section id="newNotificationSection" class="message-text">
+        <a id="newNotification">Create New Notification</a>
+    </section>
+</div>

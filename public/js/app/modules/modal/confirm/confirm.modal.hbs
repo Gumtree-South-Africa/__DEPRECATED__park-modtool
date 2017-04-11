@@ -1,0 +1,24 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <h4 class="modal-title">{{ title }}</h4>
+  </div>
+  <div class="modal-body">
+    <p>{{ question }}</p>
+    <div>
+      <p>{{ note }}</p>
+    </div>
+    <div>
+      {{#each options}}
+        <div class="modal-option">
+          <input type="radio" class="modal-option-radio-btn" id={{this}} name="delete-options" value={{@index}} />
+          <label class="modal-option-label" for={{this}}>{{ this }}</label>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <button type="button" class="js-cancel btn btn-default" data-dismiss="modal">Cancel</button>
+    <button type="button" class="js-confirm btn btn-primary" data-dismiss="modal" disabled="disabled">Confirm</button>
+  </div>
+</div><!-- /.modal-content -->

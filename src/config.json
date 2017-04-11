@@ -1,0 +1,6 @@
+{
+  "host" : "http://localhost:8080",
+  "webappHost": "http://www-qa.vivanuncios.us/",
+  "vhost" :"parkweb",
+  "local": true
+}
